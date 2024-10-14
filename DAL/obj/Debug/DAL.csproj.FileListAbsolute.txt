@@ -1,0 +1,18 @@
+C:\Users\marti\Desktop\Proyectos random\DAL\bin\Debug\DAL.dll
+C:\Users\marti\Desktop\Proyectos random\DAL\bin\Debug\DAL.pdb
+C:\Users\marti\Desktop\Proyectos random\DAL\bin\Debug\BLL.dll
+C:\Users\marti\Desktop\Proyectos random\DAL\bin\Debug\BLL.pdb
+C:\Users\marti\Desktop\Proyectos random\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\marti\Desktop\Proyectos random\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\marti\Desktop\Proyectos random\DAL\obj\Debug\DAL.csproj.Up2Date
+C:\Users\marti\Desktop\Proyectos random\DAL\obj\Debug\DAL.dll
+C:\Users\marti\Desktop\Proyectos random\DAL\obj\Debug\DAL.pdb
+C:\Users\marti\Desktop\Proyectos random\PRACTICA CRUD UBICACIONES\DAL\bin\Debug\DAL.dll
+C:\Users\marti\Desktop\Proyectos random\PRACTICA CRUD UBICACIONES\DAL\bin\Debug\DAL.pdb
+C:\Users\marti\Desktop\Proyectos random\PRACTICA CRUD UBICACIONES\DAL\bin\Debug\BLL.dll
+C:\Users\marti\Desktop\Proyectos random\PRACTICA CRUD UBICACIONES\DAL\bin\Debug\BLL.pdb
+C:\Users\marti\Desktop\Proyectos random\PRACTICA CRUD UBICACIONES\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\marti\Desktop\Proyectos random\PRACTICA CRUD UBICACIONES\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\marti\Desktop\Proyectos random\PRACTICA CRUD UBICACIONES\DAL\obj\Debug\DAL.csproj.Up2Date
+C:\Users\marti\Desktop\Proyectos random\PRACTICA CRUD UBICACIONES\DAL\obj\Debug\DAL.dll
+C:\Users\marti\Desktop\Proyectos random\PRACTICA CRUD UBICACIONES\DAL\obj\Debug\DAL.pdb
