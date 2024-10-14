@@ -53,5 +53,60 @@ namespace CrudUbicaciones_MALH
             oUbicacionesDAL.Agregar(datosUbicacion());
             ListarUbicaciones(); //Para mostarlo en el GV
         }
+
+        
+        protected void gvUbicaciones_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            GridViewRow filaSeleccionada = gvUbicaciones.SelectedRow;
+
+            txtID.Value = filaSeleccionada.Cells[1].Text;
+            txtUbicacion.Text = filaSeleccionada.Cells[2].Text;
+            txtLat.Text = filaSeleccionada.Cells[3].Text;
+            txtLong.Text = filaSeleccionada.Cells[4].Text;
+
+            btnModificar.Enabled = true;
+            btnEliminar.Enabled = true;
+            btnAgregar.Enabled = false;
+        }
+
+        //Modificar
+        protected void btnModificar_Click(object sender, EventArgs e)
+        {
+            oUbicacionesDAL = new ubicaionesDAL();
+            bool success = oUbicacionesDAL.Modificar(datosUbicacion());
+
+            if (success)
+            {
+                ListarUbicaciones();
+                
+            }
+        }
+
+        //Eliminar
+        protected void btnEliminar_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(txtID.Value);
+            oUbicacionesDAL = new ubicaionesDAL();
+            bool success = oUbicacionesDAL.Eliminar(id);
+
+            if (success)
+            {
+                ListarUbicaciones();
+                
+            }
+        }
+           //Limpiar
+        protected void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtID.Value = string.Empty;
+            txtUbicacion.Text = string.Empty;
+            txtLat.Text = string.Empty;
+            txtLong.Text = string.Empty;
+
+            btnAgregar.Enabled = true;
+            btnEliminar.Enabled = false;
+            btnModificar.Enabled = false;
+            
+        }
     }
 }

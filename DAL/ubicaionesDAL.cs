@@ -30,13 +30,29 @@ namespace DAL
 
         }
 
-        public void Eliminar()
+        public bool Eliminar(int ID)
         {
+            SqlCommand cmdComando = new SqlCommand();
+
+            cmdComando.CommandText = "DELETE FROM Direcciones WHERE ID = @ID";
+            cmdComando.Parameters.Add("@ID", SqlDbType.Int).Value = ID;
+
+            return oConexion.EjecutarComandoSQL(cmdComando);
+
 
         }
 
-        public void Modificar()
+        public bool Modificar(ubicaciones_BLL OubicacionesBLL)
         {
+            SqlCommand cmdComando = new SqlCommand();
+
+            cmdComando.CommandText = "UPDATE Direcciones SET Ubicacion = @Ubicacion, Latitud = @Latitud, Longitud = @Longitud WHERE ID = @ID";
+            cmdComando.Parameters.Add("@ID", SqlDbType.Int).Value = OubicacionesBLL.ID;
+            cmdComando.Parameters.Add("@Ubicacion", SqlDbType.VarChar).Value = OubicacionesBLL.Ubicacion;
+            cmdComando.Parameters.Add("@Latitud", SqlDbType.VarChar).Value = OubicacionesBLL.Latitud;
+            cmdComando.Parameters.Add("@Longitud", SqlDbType.VarChar).Value = OubicacionesBLL.Longitud;
+
+            return oConexion.EjecutarComandoSQL(cmdComando);
 
         }
         //Seleccionar los registros de la tabla mediante un SELECT

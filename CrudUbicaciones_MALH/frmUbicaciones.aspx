@@ -37,17 +37,17 @@
                     <!-- Controles de altas, bajas y cambios -->
                     <div class="form-group">
                     <asp:Button ID="btnAgregar" CssClass="btn btn-success" runat="server" Text="Agregar" UseSubmitBehavior="false" OnClick="AgregarRegistro"/>
-                    <asp:Button ID="btnModificar" CssClass="btn btn-warning" runat="server" Text="Modificar" UseSubmitBehavior="false" Enabled="false"/>
-                    <asp:Button ID="btnEliminar" CssClass="btn btn-danger" runat="server" Text="Eliminar" UseSubmitBehavior="false" Enabled="false"/>
-                    <asp:Button ID="btnLimpiar" CssClass="btn btn-default" runat="server" Text="Limpiar" UseSubmitBehavior="false"/>
+                    <asp:Button ID="btnModificar" CssClass="btn btn-warning" runat="server" Text="Modificar" UseSubmitBehavior="false" Enabled="false" OnClick="btnModificar_Click"/>
+                    <asp:Button ID="btnEliminar" CssClass="btn btn-danger" runat="server" Text="Eliminar" UseSubmitBehavior="false" Enabled="false"  OnClick="btnEliminar_Click"/>
+                    <asp:Button ID="btnLimpiar" CssClass="btn btn-default" runat="server" Text="Limpiar" UseSubmitBehavior="false" OnClick="btnLimpiar_Click"/>
                     </div>                   
                 </div>
                 <div class="col-md-8">
                     <br />
                     <h1>Ubicaciones</h1>
-                      <asp:GridView ID="gvUbicaciones" runat="server" CssClass="table-reponsive table table-bordered">
+                      <asp:GridView ID="gvUbicaciones" runat="server" CssClass="table-reponsive table table-bordered" OnSelectedIndexChanged="gvUbicaciones_SelectedIndexChanged"  AutoPostBack="true">
                           <Columns>
-                              <asp:ButtonField CommandName="btnSeleccionar" Text="Seleccionar" >
+                              <asp:ButtonField CommandName="Select" Text="Seleccionar" >
                               <ControlStyle CssClass="btn btn-info" />
                               </asp:ButtonField>
                           </Columns>
